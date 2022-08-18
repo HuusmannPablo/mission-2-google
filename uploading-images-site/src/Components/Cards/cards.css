@@ -1,0 +1,21 @@
+.main-card-container {
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.card-container {
+  max-width: 25.1%;
+  max-height: 30%;
+  outline: 2px solid darkgrey;
+  margin-bottom: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  outline: 2px solid darkgrey;
+}
