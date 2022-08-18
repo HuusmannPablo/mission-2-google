@@ -14,14 +14,16 @@ app.use(cors({
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const imageUploadPath = "D:/Pablo/Mission Ready/Level 5 Advance Software Developer/Code/Mission-2/mission-2/uploaded-files";
+const imageUploadPath = "D:/Pablo/Mission Ready/Level 5 Advance Software Developer/Code/Mission-2/mission-2-google/uploading-images-site/uploaded-files";
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, imageUploadPath)
     },
     filename: function(req, file, cb) {
-        cb(null, `${file.filename}_dateVal_${Date.now()}_${file.originalname}`)
+        // cb(null, `${file.filename}_dateVal_${Date.now()}_${file.originalname}`)
+        console.log('creating file')
+        cb(null, `example-picture`)
     }
 })
 const imageUpload = multer({storage: storage})
